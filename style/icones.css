@@ -1,0 +1,61 @@
+.icone-anterior {
+  background-color: var(--cinza-icones-claro);
+  height: 10%;
+  width: 10%;
+  clip-path: polygon(70% 0, 40% 50%, 70% 100%, 60% 100%, 30% 50%, 60% 0);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.icone-anterior:hover {
+  transition: 0.5s;
+  background: var(--laranja);
+}
+.icone-proximo {
+  background-color: var(--cinza-icones-claro);
+  height: 10%;
+  width: 10%;
+  clip-path: polygon(40% 0, 70% 50%, 40% 100%, 30% 100%, 60% 50%, 30% 0);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.icone-proximo:hover {
+  transition: 0.5s;
+  background: var(--laranja);
+}
+
+.icone-pasta {
+  height: 18px;
+  width: 10px;
+  background: var(--cinza-icones-claro);
+  position: fixed;
+  border-radius: 2px;
+  transition: 0.5s;
+}
+.icone-pasta:hover {
+  transition: 0.5s;
+  background: var(--laranja);
+}
+.icone-pasta:hover {
+  color: var(--laranja);
+  transition: 0.5s;
+}
+.icone-pasta::before {
+  content: '';
+  position: absolute;
+  background: var(--cinza-icones);
+  width: 20px;
+  height: 15px;
+  border-radius: 2px;
+  top: 3px;
+  left: 0px;
+}
+
+:root {
+  --cinza-icones-claro: #666;
+  --cinza-icones: #444;
+  --cinza-borda-escura: #111;
+  --cinza-borda: #222;
+  --cinza-fundo: #090909;
+  --laranja: #d68700;
+  --fonte-cinza-claro: #999;
+}

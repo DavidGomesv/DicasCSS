@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: var(--fonte-cinza-claro);
+  font-family: 'Courier New', Courier, monospace;
+  text-decoration: none;
+}
+*::selection {
+  background: var(--cinza-fundo);
+  color: var(--laranja);
+}
+*::-webkit-scrollbar {
+  width: 8px; /* width of the entire scrollbar */
+}
+*::-webkit-scrollbar-track {
+  background: var(--cinza-fundo); /* color of the tracking area */
+}
+*::-webkit-scrollbar-thumb {
+  background-color: var(--cinza-icones-claro);
+  border-radius: 10px;
+}
+*::-webkit-scrollbar-corner {
+  background: var(--cinza-fundo);
+}
+main {
+  background-image: url('/assets/fundo.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/*---------- MENU ----------*/
+.container-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 30%;
+}
+.menu {
+  background-color: var(--cinza-fundo);
+  border: 1px solid var(--cinza-borda);
+  border-radius: 2%;
+  width: 80%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.logo {
+  height: 10%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px dotted var(--cinza-borda-escura);
+}
+.logo span {
+  color: var(--laranja);
+}
+
+/*-----PASTAS--a---*/
+.pastas {
+  overflow: scroll;
+  height: 80%;
+  width: 90%;
+  background-color: var(--cinza-fundo);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.pasta {
+  width: 100%;
+  padding-bottom: 15px;
+}
+.pasta a {
+  transition: 0.5s;
+  cursor: pointer;
+}
+a:hover {
+  color: var(--laranja);
+}
+.pasta:hover .icone-pasta {
+  background: var(--laranja);
+}
+
+.subpastas {
+  padding-left: 15px;
+}
+
+/*---------- CONTEÚDO ----------*/
+.container-conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 70%;
+}
+.box-conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 90%;
+  border: 1px solid var(--cinza-borda);
+  border-radius: 2%;
+}
+.conteudo {
+  width: 80%;
+  height: 90%;
+  background-color: var(--cinza-fundo);
+}
+
+:root {
+  --cinza-icones-claro: #666;
+  --cinza-icones: #444;
+  --cinza-borda-escura: #111;
+  --cinza-borda: #222;
+  --cinza-fundo: #090909;
+  --laranja: #d68700;
+  --fonte-cinza-claro: #999;
+}
